@@ -71,7 +71,7 @@ $( function() {
         var credit = el.attr('data-img-credit');
         var text = el.html();
         if ( img ) {
-            el.html("<img src='"+img+"'></img><p>"+text+"</p><span role='credit'>Image: "+credit+"</span>");
+            el.html("<img src='"+img+"'></img><p>"+text+"</p><span role='credit'><i>Image:</i> "+credit+"</span>");
         }
     });
     var w = $(window).width();
