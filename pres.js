@@ -74,6 +74,20 @@ $( function() {
             el.html("<img src='"+img+"'></img><p>"+text+"</p><span role='credit'>Image: "+credit+"</span>");
         }
     });
+    var w = $(window).width();
+    $("body")
+        .mousedown(function(e) {
+            isDragging = false;
+            x = e.pageX;
+            if ( x < w/10 ) {
+                bwd()
+            } else if ( x > w*0.9 ) {
+                fwd();
+            }
+        });
+
+    // $("body").on('swiperight', function() { console.log('hiho'); bwd(); });
+    // $(".slide").on('swipeleft', function() { console.log('hiho 2'); fwd(); });
     $(".slide:first").toggleClass('active',true).toggleClass('pre',false);
     var hash = window.location.hash.substring(1);
     hash = parseInt(hash);
