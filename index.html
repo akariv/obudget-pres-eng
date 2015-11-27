@@ -1,0 +1,115 @@
+<html>
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="pres.css">
+</head>
+<body>
+    <div class="slide active title" data-toc="true">
+        <h1>Opening the Israeli Budget</h1>
+        <h2>Adam Kariv, The Public Knowledge Workshop (11/2015)</h2>
+    </div>
+    <div class="slide"  data-img="img/budget_hackathon.jpg" data-img-credit="The Budget team in one of our hackathons">
+        The <a href="http://www.hasadna.org.il/en"><b>Public Knowledge Workshop</b></a> is an NGO focused on using tech to promote transparency and transform "public data" into "public knowledge"
+    </div>
+    <div class="slide" data-img="img/the-founders.jpg" data-img-credit="The entire Public Knowledge Workshop in one of its first meetups">
+        Since 2010, the "Budget Key" project (aka "Open Budget") aims to unravel the secrets within the State's Budget (approx $120B)
+    </div>
+    <div class="slide" data-img="img/budget_legacy.jpg" data-img-credit="actual file as released by the MOF">
+        The beginning (Dec. 2010): scraping and parsing 100s of xls/text/html files to create the first budget DB spanning over 20 years of budget data
+    </div>
+    <div class="slide" data-img="img/mickey.jpg" data-img-credit='Former minister Michael Eitan'>
+        We only got the data through a combination of FOIA requests and the aid of a government minister (MK Michael Eitan)
+    </div>
+    <div class="slide" data-img='img/openbudget.png' data-img-credit='Screenshot of budget.msh.gov.il'>
+        Launch (Mar. 2011) - "The Open Budget" - our open-source, open-data, first of a kind budget site launches. Spanning 20 years of fully-searchable budget data (and we got ourselves a government domain name!)
+    </div>
+    <div class="slide" data-img='img/transfer-pages.jpg' data-img-credit='Budgetary transfer records from the Knesset archives'>
+        Budgetary transfers - changes in the budget during the year - were the next target. The Knesset's Finance Committee (which is appointed to approve these changes) only got the propsed transfers during the meeting. And the MOF claimed they only kept the paper trail, without any digital record.
+    </div>
+    <div class="slide" data-img="img/copy-machine.jpg" data-img-credit="Actual copy machine in the Knesset archives">
+        In 2012 we sent volunteers to scan the records in the Knesset archives...
+    </div>
+    <div class="slide" data-img="img/openmoney.png" data-img-credit="Screenshot from openmoney.org">
+        And we built a crowd-sourcing platform in order to digitize the scanned records back into machine readable form.
+    </div>
+    <div class="slide" data-img="img/ynet-budget-transfers.png" data-img-credit="Screenshot from Israels largest news-site re the release of the data" data-toc="true">
+        Only 8 hours passed since the site launched until the media caught on the story and MOF backed-down and "miraculously" found all the transfers' data. Later that day all data from 2005 to 2011 was published in an Excel file.
+    </div>
+    <div class="slide" data-img="img/vaadat-stav.jpg" data-img-credit="MK Shaffir at the Finance Committee">
+        The story of budgetary transfers does not end here - in 2013 we started working with the Knesset's youngest MK - Stav Shaffir - who took upen herself to fight this bad practice of extensive changes to the budget throughout the year.
+    </div>
+    <div class="slide" data-img="img/vaadat.jpg" data-img-credit="The Knesset Finance Committee">
+        Turns out that over 13% of the budget is reallocated through the course of one year. Some of these changes are technical, but some are highly political, used to avoid public scrutiny or as a means for the MOF to exert their power over other minisitries.
+    </div>
+    <div class="slide" data-img="img/working-with-stav.jpg" data-img-credit="MK Shaffir attending one of our hackathons">
+        We built a tool which its only purpose was to be used during the finance committee sessions (the body that approves budgetary changes). MK Shaffir used it to get an extensive report for each proposed change, allowing her to "ask the hard questions" in real-time, before decisions were made.
+    </div>
+    <div class="slide" data-img="img/mof-budget-changes-translated.jpg" data-img-credit="Auto-translated version of MOF website for publishing proposed budget changes">
+        One of the side effects of this political campaign was that in 2014 the MOF started to publish proposed budgetary transfers one week before the committee's meeting - and in digital form. What a major policy change in just two years!
+    </div>
+    <div class="slide" data-img="img/expenditure.jpg" data-img-credit="Illustration">
+        In 2014 we started to look at spending data. Our first data source was the grants database - a long list of organizations, financially supported by the government.<br/>
+        The government does not release this data in a machine readable form - only in a website that only works in IE6. But this doesn't frighten us...
+    </div>
+    <div class="slide" data-img="img/a-settlement.jpg" data-img-credit="Karney Shomron Settlement">
+        One thing that caught our eye were records that only started to appear in 2014. These records were from the "Settlement Division" - Israel's secretive organization for settling in the occupied territories. Although not being part of the government, this branch of the WZO is fully funded directly from the State's Budget
+    </div>
+    <div class="slide" data-img="img/settlements-division-budget.jpg" data-img-credit="Screenshot from obudget.org, showing change in the settlment division's budget throuout the year">
+        An interesting side note - turns out that budgetary transfers are used to increase the actual budget for the settlement division throughout the year, making it 10 times bigger than what was originally approved by the Knesset.
+    </div>
+    <div class="slide" data-img="img/settlements-molad.jpg" data-img-credit="Excerpt from Molad's Report on the Settlements Division">
+        The grant records were a first glimpse into the inner working of the division. We passed the findings to a group of researchers. By <a href="http://www.molad.org/images/upload/files/HaHativaLeHityashvut.pdf" target="_blank">analyzing them</a> they found a disproportional allocation of resources as well as few instances of corruption in one specific unit.
+    </div>
+    <div class="slide" data-img="img/fox-news-settlments.jpg" data-img-credit="Not the NY Times" data-toc="true">
+        The findings were published in major news outlets (we even got to the NY Times...). Today there's an ongoing police investigation related to corrupt money passing through the division. The specific corrupt unit was shut down. And the government's legal advisor wrote a report prohibiting future funding directly from the budget (but it ain't over yet...)
+    </div>
+    <div class="slide" data-img="img/calcalist.png" data-img-credit="Home page for our joint-project with Calcalist">
+        Back in 2013 was our first attempt at reaching the wider public was done in collaboration with Calcalist, a major economic news outlet. We compared the proposed 2013 budget with the current budget using a <a href="http://compare.open-budget.org.il" target="_blank">'bubbles' visualization</a>.
+    </div>
+    <div class="slide" data-img="img/calcalist-series.png" data-img-credit="">
+        Calcalist followed the deliberations in the Knesset on the proposed budget with in-depth articles accompanied by our data analysis and visualization.
+    </div>
+    <div class="slide" data-img="img/activists.jpg" data-img-credit="Adam and Mushon in the launch at the Knesset">
+        Late 2014 we launched the "Budget Key" - our main website which replaced the original website we launched 3 years before.
+    </div>
+    <div class="slide" data-img="img/obudget.org.png" data-img-credit="Logo of obudget.org + a heat map of which items changed most during the year.">
+        This time we took an opinionated approach - putting our focus on the what we think is important in the budget. One example is the emphasis we put on the significance of budgetary transfers...
+    </div>
+    <div class="slide" data-img="img/bennet-exemption.jpg" data-img-credit="One of the suspicious exemptions we found (screenshot: Haaretz)">
+        Another example is procurement which gets exempt from going through the tender processes. We devised an "interest" formula, which should bring first the most suspicious exemption requests.
+    </div>
+    <div class="slide" data-img="img/themarker-transfers.jpg" data-img-credit="A double-spread in TheMarker">
+        When we're not finding specific cases of corruption, we try to bring interesting budget-related issues to the front pages.
+        For example: An extensive piece regarding budgetary transfers.
+    </div>
+    <div class="slide" data-img="img/edu-privatization.jpg" data-img-credit="Another double-spread in TheMarker">
+        Another example: Our analysis of out-sourcing and privatization in the Education system.
+    </div>
+    <div class="slide" data-img="img/me-on-tv.jpg" data-img-credit="I'm explaining what are budgetary transfers in a right-wing TV channel">
+        We aim to keep a bi-partisan position and a clear "transparency only" agenda. We try to reach non-obvious audiences as well...
+    </div>
+    <div class="slide" data-img="img/right-wing-press.jpg" data-img-credit="Color piece on the PKW in a right-wing newspaper" >
+        which tend to receive us with a positive approach.
+    </div>
+    <div class="slide" data-img="img/wheres-my-data.jpg" data-img-credit="Photo from a conference we held for getting NGOs more acquainted with the PKW tools, including the BudgetKey" data-toc="true">
+        Other than working with the media, we also work with the third sector as well. As we're a unique NGO (being a technology oriented one), we see it as our responsibility to help other NGOs deal with their own data.
+    </div>
+
+    <div class="slide title">
+        <h1>Thank You</h1>
+        <h2>Questions please!</h2>
+    </div>
+    <div class="toc">
+        <span class="toc-header">What we've been doing</span>
+        <ul>
+            <li class='pre'>Releasing Data</li>
+            <li class='pre'>Creating Impact</li>
+            <li class='pre'>Spreading the Knowledge</li>
+        </ul>
+    </div>
+
+</body>
+<script src='pres.js'></script>
+</html>
