@@ -6,6 +6,16 @@ body {
     color: white;
 }
 
+a:link { color: #A0D8F1; }
+a:visited {color: #A0D8F1;}
+
+.slide p a:link {
+    color: #003366;
+}
+.slide p a:visited {
+    color: #003366;
+}
+
 .toc {
     transition-duration: 0.3s;
     font-size: 1.2em;
