@@ -1,0 +1,142 @@
+<html>
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="pres-rtl.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+</head>
+<body style="direction:rtl">
+    <div class="slide active title" data-toc="true">
+        <h1>פותחים את תקציב המדינה</h1>
+        <h2>אדם קריב<br/><br/><small>הסדנא לידע ציבורי<br/>(11/2015)</small></h2>
+        <h4><center>adam@obudget.org</br></br>URL for this presentation: <a href="http://nirbadt.github.io/obudget-pres-eng/heb.html">http://nirbadt.github.io/obudget-pres-eng/heb.html</a></center></h4>
+    </div>
+    <div class="slide"  data-img="img/budget_hackathon.jpg" data-img-credit="צוות מפתח התקציב באחד מההאקטונים של הסדנא">
+        <a href="http://www.hasadna.org.il/en"><b>הסדנא לידע ציבורי</b></a> פועלת להגברת השתתפתות ציבורית בישראל, על ידי איסוף, פתיחה והנגשה של מידע ציבורי שמצוי ברשותם של גופי ממשל ומגזר ציבורי
+    </div>
+    <div class="slide" data-img="img/the-founders.jpg" data-img-credit="כל צוות הסנדא באחד ממפגשי הפיתוח הראשונים">
+      אז 2010, ״מפתח התקציב״ (ידוע גם כ״תקציב פתוח״) עוסק בפענוח הסודות בתוך תקציב המדינה - כ435 מיליארד ש״ח
+    </div>
+    <div class="slide" data-img="img/budget_legacy.jpg" data-img-credit="מסמך תקציב כפי ששוחרר ממשרד האוצר">
+        ההתחלה (דצמבר 2010): גירוד וניתוח מאות דפי אקסל/טקסט/אינטרנט ליצירת מאגר המידע הראשון המתפרס על 20 שנות מידע תקציבי
+    </div>
+    <div class="slide" data-img="img/mickey.jpg" data-img-credit='השר לשעבר מיקי איתן'>
+        את המידע קיבלנו על ידי שילוב של בקשות חופש מידע ועזרתו של השר מיקי איתן
+    </div>
+    <div class="slide" data-img='img/openbudget.png' data-img-credit='תצלום מסך budget.msh.gov.il'>
+        ״התקציב הפתוח״ - כפי שהושק במרץ 2011. אתר התקציב בקוד פתוח/מידע פתוח הראשון מסוגו, המאפשר חיפוש מידע באופן מלא - ועוד בכתובת ממשלתית
+    </div>
+    <div class="slide" data-img='img/transfer-pages.jpg' data-img-credit='רישומי העברות תקציביות מארכיון הכנסת'>
+        העברות תקציביות - שינויים בתקציב המדינה במהלך השנה - היו המטרה הבאה. וועדת הכספים של הכנסת (שתפקידה לאשר את ההעברות הכספיות) קיבלה את הצעות ההעברה רק במהלך הפגישה. לצערנו, משרד האוצר טען שאין ברשותו קבצים דיגיטליים, רק רישומים מודפסים
+    </div>
+    <div class="slide" data-img="img/copy-machine.jpg" data-img-credit="משכפלים מסמכים בארכיון הכנסת">
+        ב2012 שלחנו מתנדבים לסרוק את ארכיון הכנסת
+    </div>
+    <div class="slide" data-img="img/openmoney.png" data-img-credit="תצלום מסך - openmoney.org">
+        בנינו מערכת שיתוף פעולה המונית, וקראנו לאזרחים לעזור לנו להפוך את המסמכים הסרוקים בחזרה לקבצים קריאי מכונה - על ידי הקלדת אות אות
+    </div>
+    <div class="slide" data-img="img/ynet-budget-transfers.png" data-img-credit="תצלום הכתבה לאחר שמשרד האוצר החליט לפרסם את ההעברות" data-toc="true">
+        חלפו רק 8 שעות מרגע עליית האתר שלנו לאוויר ועד שהתקשורת עלתה על הסיפור. משרד האוצר מצא באופן פלאי את כל המידע באופן דיגיטלי. בהמשך היום כל המידע מ2005 ועד 2011 פורסם בקובץ אקסל
+    </div>
+    <div class="slide" data-img="img/vaadat-stav.jpg" data-img-credit="ח״כ סתיו שפיר בוודעת הכספים">
+        סיפור ההעברות התקציביות רק התחיל - ב2013 התחלנו לעבוד עם ח״כ סתיו שפיר שלקחה על עצמה את המאבק במנהג הפסול של שינויים אדירים בתקציב המדינה במהלך השנה
+    </div>
+    <div class="slide" data-img="img/vaadat.jpg" data-img-credit="וועדת הכספים">
+        הסתבר פתאום ש13% מתקציב המדינה משתנה במהלכה של שנה אחת. חלק מהשינויים הם טכניים, אך חלקם פוליטיים מאד, ומשמשים למנוע אפשרות לביקורת ציבורית, או ככלי לחץ של משרד האוצר על משרדי הממשלה
+    </div>
+    <div class="slide" data-img="img/working-with-stav.jpg" data-img-credit="ח״כ סתיו שפיר באחד מההאקטונים של הסדנא">
+        בנינו כלי שמטרתו היחידה הייתה לאפשר בדיקה של ההצעות להעברה במהלך וועדת הכספים. ח״כ שפיר השתמשה בכלי בכדי לקבל מידע מעמיק על כל העברה, דבר שאפשר לה לשאול את השאלות הקשות בזמן אמת, לפני שההצבעה התרחשה
+    </div>
+    <div class="slide" data-img="img/mof-budget-changes.jpg" data-img-credit="אתר משרד האוצר המפרסם את השינויים בתקציב המדינה">
+        כחלק מההשפעות של המהלך, ב2014 החל משרד האוצר לפרסם את ההצעות להעברות תקציביות שבוע לפני התכנסות וועדת הכספים - ובצורה דיגיטלית. שינוי אדיר במדיניות בתוך שנתיים בלבד
+    </div>
+    <div class="slide" data-img="img/expenditure.jpg" data-img-credit="אילוסטרציה">
+        בשנת 2014 התחלנו להסתכל על הוצאות המדינה. מאגר המידע הראשון שלנו היה מאגר התמיכות - רשימה ארוכה של ארגונים המקבלים תמיכה פיננסית מהממשלה.<br/>
+        הממשלה לא שחררה את המידע בפורמט קריא מכונה - רק באתר שעובד עם אינטרנט אקספלורר 6 בלבד. אך זה לא הרתיע אותנו
+    </div>
+    <div class="slide" data-img="img/a-settlement.jpg" data-img-credit="ההתנחלות קרני שומרון">
+        דבר אחד שתפס את עיננו היה רישומים שהחלו להופיע ב2014 בנוגע לחטיבה להתיישבות - ארגון שמטרתו עידוד התנחלויות. למרות שזהו אינו גוף ממשלתי, זרוע זו של ההסתדרות הציונית העולמית מקבלת תקצוב ישירות מתקציב המדינה
+    </div>
+    <div class="slide" data-img="img/settlements-division-budget.jpg" data-img-credit="תצלום מסך מאתר מפתח התקציב המראה את השינויים בתקציב החטיבה להתיישבות במהלך השנה">
+        מסתבר שהעברות תקציביות משמשות להגדלת התיקצוב לחטיבה להתיישבות, ומגדילים את תקציבה פי 10 ממה שאושר על ידי הכנסת
+    </div>
+    <div class="slide" data-img="img/settlements-molad.jpg" data-img-credit="קטע מתוך דו״ח של מולד על החטיבה להתיישבות">
+        מאגר התמיכות נתן הצצה ראשונה לתוך המנגנונים הפנימיים של החטיבה. העברנו את הממצאים לקבוצת המחקר מולד. בניתוח המידע נמצאה חלוקה לא פרופורציונית של משאבים וכן מספר מקרים של שחיתות. ניתן לראות את הממצאים
+        <a href="http://www.molad.org/images/upload/files/HaHativaLeHityashvut.pdf" target="_blank">כאן</a>
+    </div>
+    <div class="slide" data-img="img/fox-news-settlments.jpg" data-img-credit="לא הניו יורק טיימס" data-toc="true">
+        הממצאים שלנו התפרסמו בגופי התקשורת ונפתחה החקירה בנוגע לשחיתות בהעברות כספים דרך החטיבה. הגוף המושחת הספציפי נסגר והיועץ המשפטי לממשלה אסר על המשך תקצוב החטיבה ישירות מהתקציב
+    </div>
+    <div class="slide" data-img="img/calcalist.png" data-img-credit="עמוד הבית לפרויקט המשותף עם כלכליסט">
+      הנסיון הראשון שלנו לפנות לקהל רחב יותר היה ב2013, בשיתוף פעולה עם כלכליסט. ייצרנו וויזואליזציה של ההבדלים בין הצעת התקציב של 2013 לבין התקציב של 2012 בעזרת
+           <a href="http://compare.open-budget.org.il" target="_blank">'בועות צבעוניות'</a>.
+    </div>
+    <div class="slide" data-img="img/calcalist-series.png" data-img-credit="רשימת תחקירי העומק שפורסמו לאחר תחילת הדיון בתקציב">
+        כלכליסט עקבו אחר דיוני הקציב בכנסת בסדרה של כתבות עומק המלוות בניתוח המידע והוויזואליזציות שלנו
+    </div>
+    <div class="slide" data-img="img/activists.jpg" data-img-credit="אדם ומושון בהשקה החגיגית בכנסת">
+        בסוף 2014 השקנו את אתר ״מפתח התקציב״ - האתר המרכזי שהחליף את האתר שהושק 3 שנים לפני כן
+    </div>
+    <div class="slide" data-img="img/obudget.org.png" data-img-credit="obudget.org וויזואליזצית השינויים בתקציב המדינה כפי שמוצגת ב">
+        בפעם הזאת נקטנו בגישה יותר דעתנית והחלטנו לשים את תשומת הלב על הדברים שנראו לנו חשובים. דוגמה אחת לכך היא הדגש ששמנו על ההעברות התקציביות
+    </div>
+    <div class="slide" data-img="img/bennet-exemption.jpg" data-img-credit="אחת ההעברות החשודות - מתוך אתר ״הארץ״">
+        נושא נוסף שאנו עוסקים בו באופן ממוקד הוא פטורים ממכרזים. יצרנו חוקיות המציפה את הפטורים ממכרז שנראים חשודים בכדי שנוכל לבדוק אותם לעומק
+    </div>
+    <div class="slide" data-img="img/themarker-transfers.jpg" data-img-credit="כתבה כפולה בדה מרקר">
+        משימה עיקרית וחשובה שלנו היא העלאת המודעות הציבורית לסוגיות חשובות בתקציב המדינה בעזרת גופי תקשורת ומדיה מובילים. לדוגמא: כתבת עומק בנושא ההעברות התקציביות
+    </div>
+    <div class="slide" data-img="img/edu-privatization.jpg" data-img-credit="כתבה כפולה נוספת בדה מרקר">
+        דוגמא נוספת: ניתוח שלנו של נושא מיקור חוץ והפרטה במערכת החינוך
+    </div>
+    <div class="slide" data-img="img/me-on-tv.jpg" data-img-credit="אדם מסביר מהי העברה תקציבית בערוץ 20">
+        מטרתנו היא לשמור על אובייקטיביות ואג׳נדה של ״שקיפות בלבד״ תוך פנייה לכל הקהלים האפשריים
+    </div>
+    <div class="slide" data-img="img/right-wing-press.jpg" data-img-credit="כתבה ממקור ראשון" >
+        האג׳נדה שלנו חוצת גבולות פוליטיים ומקבלת תמיכה בשמאל בימין
+    </div>
+    <div class="slide" data-img="img/wheres-my-data.jpg" data-img-credit="תמונה מתוך כנס שקיימנו שמטרתו להכיר לעמותות את הכלים של הסדנא לידע ציבורי וביניהם מפתח התקציב" data-toc="true">
+        מעבר לעבודה עם המדיה, אנחנו עובדים עם גופים מהמגזר השלישי. בהיותנו עמותה עם אוריינטציה טכנולוגית, אנו רואים את עצמנו מחוייבים לעזור לעמותות אחרות לעשות שימוש במידע פתוח שיכול לעזור לפעילותן
+    </div>
+
+    <div class="slide" data-img="img/data.obudget.org.jpg" data-img-credit="תצלום מסך מתוך המערכת האנליטית שלנו" >
+        צלילה לתוך מאגרי המידע של התקשרויות בפטור ממכרז בחיפוש אחר מעגלי שחיתות
+    </div>
+    <div class="slide" data-img="img/datatours.jpg" data-img-credit="דוגמא לסיור מידע" >
+        הוספת נרטיבים על גבי המידע ליצירת סיורים מבוססי מידע
+    </div>
+    <div class="slide" data-img="img/procurement.jpg" data-img-credit="מערכת ניתוח ההתקשרויות העתידית שלנו" data-toc="true">
+        כלים נוספים שיעזרו לעבודת מחקר מעמיקה יאפשרו לגופים שונים לבצע תחקירים טובים יותר
+    </div>
+
+    <div class="slide title">
+        <h1>תודה רבה</h1>
+        <h2>שאלות</h2>
+        <div style="position:absolute;bottom:0px;font-size:50%;font-color:white;right:0px;">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
+            </a>
+            <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">OBudget Presentation</span> by
+            <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:adam@obudget.org" property="cc:attributionName" rel="cc:attributionURL">Adam Kariv</a> is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+            </a>.
+        </div>
+    </div>
+    <div class="toc">
+        <span class="toc-header">במה אנו עוסקים</span>
+        <ul>
+            <li class='pre'>משחררים מידע</li>
+            <li class='pre'>משפיעים</li>
+            <li class='pre'>מפיצים ידע</li>
+            <li class='pre'>מה הלאה?</li>
+        </ul>
+    </div>
+
+
+</body>
+<script src='pres-rtl.js'></script>
+</html>

@@ -50,17 +50,17 @@ $(window).keypress(function(event) {
 });
 $(window).keyup(function(event) {
     console.log(event.which+" UP");
-    if ( event.which == 8 || event.which == 37 ) {
+    if ( event.which == 8 || event.which == 39 ) {
         bwd();
     }
-    if ( event.which == 39 ) {
+    if ( event.which == 37 ) {
         fwd();
     }
 });
 $( function() {
     $(".toc li").each( function(i) {
         var ofs = $(this).position();
-        $(this).css('left',ofs.left).css('top',ofs.top);
+        $(this).css('right',ofs.left).css('top',ofs.top);
     }).each( function(i) {
         $(this).css('position','absolute');
     });
@@ -71,7 +71,7 @@ $( function() {
         var credit = el.attr('data-img-credit');
         var text = el.html();
         if ( img ) {
-            el.html("<img src='"+img+"'></img><p>"+text+"</p><span role='credit'><i>Image:</i> "+credit+"</span>");
+            el.html("<img src='"+img+"'></img><p>"+text+"</p><span role='credit'><i>תמונה:</i> "+credit+"</span>");
         }
     });
     var w = $(window).width();
