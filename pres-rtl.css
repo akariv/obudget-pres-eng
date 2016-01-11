@@ -1,0 +1,157 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #000020;
+    color: white;
+}
+
+a:link { color: #A0D8F1; }
+a:visited {color: #A0D8F1;}
+
+.slide p a:link {
+    color: #003366;
+}
+.slide p a:visited {
+    color: #003366;
+}
+
+.toc {
+    transition-duration: 0.3s;
+    font-size: 1.2em;
+    position: absolute;
+    top:5%;
+    right:70px;
+    width:90%;
+}
+
+.toc span {
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+.toc.active span {
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+
+
+.toc li {
+    transition-property: right top opacity color;
+    transition-duration: 0.3s;
+    opacity: 0;
+    list-style-type: none;
+    font-size: 2em;
+    margin-top:0.5em;
+}
+
+.toc li::before {
+    content: "\2022\00a0";
+}
+
+.toc.active li {
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+
+.toc li.active {
+    top:-25%  !important;
+    right:-20px !important;
+    font-size: 2.7em;
+    opacity: 1;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    padding: 10 0;
+}
+
+.toc li.active::before {
+    content: "\00a0\00a0";
+}
+.toc li.active::after {
+    content: "\00a0\00a0";
+}
+
+.toc span.toc-header {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.slide {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    transition-property: right visibility;
+    transition-duration: 0.3s;
+    visibility: hidden;
+}
+
+.slide.pre {
+    right:100%;
+}
+
+.slide.active {
+    right:0;
+    visibility: visible;
+}
+
+.slide.done {
+    right:-100%;
+}
+
+.slide.title h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-top:20%;
+}
+
+.slide.title h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top:10px;
+}
+
+.slide > img {
+    max-width:100%;
+    height:100%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide p {
+    display: block;
+    width:60%;
+    margin-right:-30%;
+    right:50%;
+    position:absolute;
+    bottom:10px;
+    padding:30px;
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    font-size: 1.2em;
+    -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);}
+
+.slide [role=credit] {
+    display: block;
+    left:20%;
+    position:absolute;
+    bottom:15px;
+    padding:5px;
+    color: #000020;
+    font-size: 0.9em;
+    margin-left:-50px;
+    background-color: rgba(200,200,200,0.9);
+    -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+}
